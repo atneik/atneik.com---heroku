@@ -10,6 +10,13 @@ app.get('/', function(request, response) {
 	response.send(buff.toString());
 });
 
+app.get('/style.css', function(request, response) {
+  	var stats = fs.statSync('style.css');
+	var buff = new Buffer(stats.size);
+	buff.write(fs.readFileSync('index.html','utf-8'));
+	response.send(buff.toString());
+});
+
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
