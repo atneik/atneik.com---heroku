@@ -1,18 +1,5 @@
 var express = require('express');
-var fs = require('fs');
-var util = require('util');
-var app = express.createServer(express.logger());
+var app = express();
 
-app.get('/', function(request, response) {
-  	var stats = fs.statSync('index.html');
-	var buff = new Buffer(stats.size);
-	buff.write(fs.readFileSync('index.html','utf-8'));
-	response.send(buff.toString());
-});
-
-app.use(express.static(__dirname + '/public'));
-
-var port = process.env.PORT || 8080;
-app.listen(port, function() {
-  console.log("Listening on " + port);
-});
+app.use(express.static(__dirname + ''));
+app.listen(process.env.PORT || 3000);
