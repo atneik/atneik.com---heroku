@@ -78,8 +78,8 @@ BRUSHED.slider = function(){
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
 											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">Aniket Handa</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">Aniket Handa</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">Aniket Handa</div>', thumb : '', url : ''}  
+											{image : '_include/img/slider-images/image02.png', title : '<div class="slide-content"></div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/image03.png', title : '<div class="slide-content"></div>', thumb : '', url : ''}
 									],
 									
 		// Theme Options			   
