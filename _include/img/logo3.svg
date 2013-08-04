@@ -12,22 +12,7 @@
 	<polyline fill="rgba(0,0,0,0.5)" points="744.333,239.5 677.119,239.5 649.892,219.242 543.308,139.081 677.119,38.5 744.025,38.5 
 		610.368,139 	"/>
 </g>
-<g display="none">
-	<g id="blank__x7B__1_" display="inline">
-		<rect x="874.333" y="-0.5" fill="#FFFFFF" width="410" height="281"/>
-		<rect x="834.333" y="-0.5" fill="#FFFFFF" width="40" height="40"/>
-		<rect x="834.333" y="240.5" fill="#FFFFFF" width="40" height="40"/>
-	</g>
-	<g id="_x7D_" display="inline">
-		<rect x="794.333" y="240.5" fill="#333333" width="40" height="40"/>
-		<rect x="834.333" y="79.5" fill="#808080" width="40" height="40"/>
-		<rect x="874.333" y="119.5" fill="#B3B3B3" width="40" height="41"/>
-		<rect x="834.333" y="160.5" fill="#808080" width="40" height="40"/>
-		<rect x="834.333" y="200.5" fill="#4D4D4D" width="40" height="40"/>
-		<rect x="794.333" y="-0.5" fill="#333333" width="40" height="40"/>
-		<rect x="834.333" y="39.5" fill="#4D4D4D" width="40" height="40"/>
-	</g>
-</g>
+
 <g>
 	<g id="blank__x7B_">
 	</g>
