@@ -24,7 +24,7 @@
 <!-- Bootstrap -->
 <link href="_include/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Main Style -->
+<!--  Style -->
 <link href="_include/css/main.css" rel="stylesheet">
 
 <!-- Supersized -->
@@ -84,14 +84,13 @@
 <body>
 
 <!-- This section is for Splash Screen -->
-<div class="ole">
 <section id="jSplash">
 	<div id="circle"></div>
 </section>
-</div>
+
 <!-- End of Splash Screen -->
 
-<!-- Homepage Slider -->
+<!-- Homepage Slider
 <div id="home-slider">	
     <div class="overlay"></div>
 
@@ -108,22 +107,24 @@
     </div>
 </div>
 <!-- End Homepage Slider -->
-
+<!--
+<div id="home-landing">
+	<img src="_include/img/logo.svg" width="100%" height="100%"/>
+</div>
+-->
 <!-- Header -->
 <header>
     <div class="sticky-nav">
     	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
         
         <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Aniket Handa">Aniket Handa</a>
+        	<a id="goUp" href="#home-landing" title="Aniket Handa">Aniket Handa</a>
         </div>
         
         <nav id="menu">
         	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Home</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li id="menu-work-li" class="current"><a href="#work">Work</a></li>
+                <li id="menu-about-li"><a href="#about">About</a></li>
             </ul>
         </nav>
         
@@ -134,15 +135,6 @@
 <!-- Our Work Section -->
 <div id="work" class="page">
 	<div class="container">
-    	<!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">Work</h2>
-                </div>
-            </div>
-        </div>
-        <!-- End Title Page -->
         
         <!-- Portfolio Projects -->
         <div class="row">
@@ -154,8 +146,6 @@
                         <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
                         <li><a href="#filter" data-option-value=".design">Design</a></li>
                         <li><a href="#filter" data-option-value=".photography">Photography</a></li>
-                        <li><a href="#filter" data-option-value=".develop">Develop</a></li>
-                        <li><a href="#filter" data-option-value=".android">Android</a></li>
                         <li><a href="#filter" data-option-value=".video">Video</a></li>
                     </ul>
                 </nav>
@@ -288,59 +278,56 @@
 <!-- About Section -->
 <div id="about" class="page-alternate">
 <div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">About</h2>
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
     
-    <!-- People -->
     <div class="row">
-    	
-        <!-- Start Profile Pic-->
-    	<div class="span3 profile">
+ 		<!-- Start Profile Pic-->
+    	<div class="span4 profile">
         	<div class="image-wrap">
                 <a href="http://en.gravatar.com/anikethanda262">
                 <img src="http://www.gravatar.com/avatar/afcde942cfc8ffa1867c37939ebf057e?s=300" alt="Aniket Handa">
                 </a>
             </div>
+        </div>   
+        <div class="span4">
+            <div class="title-page">
+            <h2 class="profile-name">Aniket Handa</h2>
+            <h3 class="profile-name">I Dream. I Design. I Develop.</h3>
+           
+            </div>
         </div>
-        <!-- End Profile Pic-->
-          
-        <div class="span9 profile">    
-            <h3 class="profile-name">Aniket Handa</h3>
-            <p class="profile-description">Hi! I am twenty-something working towards creating new experiences using technology. As a software developer I give some special treatment to Image processing, Computer Vision and Mobile Apps. I enjoy developing, dreaming and photography. A wanderlust. 
+        <div class="span4">
+            <div class="title-page">
+                <h2 class="title">Get in Touch</h2>
+                <h3 class="title-description">aniket <i class="font-icon-social-email" style="font-size: 20px; "></i> uw.edu</h3>
+            </div>
+        </div>
+
+        
+        
+    </div>
+    
+    <!-- People -->
+    <div class="row">
+    	
+        
+    </div>
+    <div class="row">      
+        <div class="span12 profile">    
+             <p class="profile-description">Hi! I am working towards creating new experiences using technology. As a software developer I give some special treatment to Image processing, Computer Vision and Mobile Apps. I enjoy developing, dreaming and photography. A wanderlust. 
 
 			</p>
         </div>  	
         
     </div>
     <!-- End People -->
-</div>
-</div>
-<!-- End About Section -->
-
-
-<!-- Contact Section -->
-<div id="contact" class="page">
-<div class="container">
     <!-- Title Page -->
     <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Get in Touch</h2>
-                <h3 class="title-description">aniket <i class="font-icon-social-email" style="font-size: 20px; "></i> uw.edu</h3>
-            </div>
-        </div>
+        
     </div>
     <!-- End Title Page -->
 </div>
 </div>
-<!-- End Contact Section -->
+<!-- End About Section -->
 
 <!-- Socialize -->
 <div id="social-area" class="page">
@@ -391,7 +378,7 @@
 <!-- Js -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
 <script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<!-- <script src="_include/js/supersized.3.2.7.min.js"></script> Slider -->
 <script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
 <script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
 <script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
