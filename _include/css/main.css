@@ -482,7 +482,7 @@ nav#menu #menu-nav li#menu-about-li a:hover{
 	padding:0;
 	margin: 0;
 	padding-top: 30px;
-	position: relative;
+	position:static;
 	z-index: 99;
 }
 
@@ -538,12 +538,12 @@ nav#menu #menu-nav li#menu-about-li a:hover{
 	color: #E1E43C;
 }
 
-#thumbs {
+#project-thumbs {
 	margin: 0;
 	padding: 0;	
 }
 
-#thumbs li {
+#project-thumbs li {
 	list-style-type: none;
 }
 
@@ -1151,12 +1151,12 @@ footer .credits {
 /**** Isotope Filtering ****/
 
 .isotope-item {
-  z-index: 2;
+  z-index: 3;
 }
 
 .isotope-hidden.isotope-item {
   pointer-events: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 /**** Isotope CSS3 transitions ****/
