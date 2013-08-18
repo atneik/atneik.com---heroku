@@ -120,7 +120,7 @@ BRUSHED.menu = function(){
 		currentClass: 'current',
     	changeHash: false,
     	scrollSpeed: 750,
-    	scrollOffset: 30,
+    	scrollOffset: 0,
     	scrollThreshold: 0.5,
 		easing: 'easeOutExpo',
 		filter: ':not(.external)'
@@ -139,20 +139,6 @@ BRUSHED.goSection = function(){
 		return false;
 	});
 }
-
-/* ==================================================
-   GoUp
-================================================== */
-
-BRUSHED.goUp = function(){
-	$('#goUp').on('click', function(){
-		$target = $($(this).attr('href')).offset().top-30;
-		
-		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
-		return false;
-	});
-}
-
 
 /* ==================================================
 	Scroll to Top
@@ -265,22 +251,6 @@ BRUSHED.toolTip = function(){
 ================================================== */
 
 $(document).ready(function(){
-	Modernizr.load([
-	{
-		test: Modernizr.placeholder,
-		nope: '_include/js/placeholder.js', 
-		complete : function() {
-				if (!Modernizr.placeholder) {
-						Placeholder.init({
-						live: true,
-						hideOnFocus: false,
-						className: "yourClass",
-						textColor: "#999"
-						});    
-				}
-		}
-	}
-	]);
 	
 	// Preload the page with jPreLoader
 	$('body').jpreLoader({
@@ -297,11 +267,8 @@ $(document).ready(function(){
 	BRUSHED.listenerMenu();
 	BRUSHED.menu();
 	BRUSHED.goSection();
-	BRUSHED.goUp();
-	BRUSHED.filter();
 	BRUSHED.fancyBox();
 	BRUSHED.contactForm();
-	BRUSHED.scrollToTop();
 	BRUSHED.utils();
 	BRUSHED.accordion();
 	BRUSHED.toggle();
