@@ -6,24 +6,24 @@
 <g>
 	<g>
 		<g id="_x7D_">
-			<rect x="794.333" y="240.5" fill="rgba(50,54,59,0.9)" width="40" height="40"/>
-			<rect x="834.333" y="79.5" fill="rgba(50,54,59,0.5)" width="40" height="40"/>
-			<rect x="874.333" y="119.5" fill="rgba(50,54,59,0.3)" width="40" height="41"/>
-			<rect x="834.333" y="160.5" fill="rgba(50,54,59,0.5)" width="40" height="40"/>
-			<rect x="834.333" y="200.5" fill="rgba(50,54,59,0.7)" width="40" height="40"/>
-			<rect x="794.333" y="-0.5" fill="rgba(50,54,59,0.9)" width="40" height="40"/>
-			<rect x="834.333" y="39.5" fill="rgba(50,54,59,0.7)" width="40" height="40"/>
+			<rect x="794.333" y="240.5" fill="rgb(222,222,222)" width="40" height="40"/>
+			<rect x="834.333" y="79.5" fill="rgb(222,222,222)" width="40" height="40"/>
+			<rect x="874.333" y="119.5" fill="rgb(222,222,222)" width="40" height="41"/>
+			<rect x="834.333" y="160.5" fill="rgb(222,222,222)" width="40" height="40"/>
+			<rect x="834.333" y="200.5" fill="rgb(222,222,222)" width="40" height="40"/>
+			<rect x="794.333" y="-0.5" fill="rgb(222,222,222)" width="40" height="40"/>
+			<rect x="834.333" y="39.5" fill="rgb(222,222,222)" width="40" height="40"/>
 		</g>	
 	</g>
 	<g>
 		<g id="_x7B_">
-			<rect x="80.333" y="-0.5" fill="rgba(50,54,59,0.9)" width="40" height="40"/>
-			<rect x="40.333" y="160.5" fill="rgba(50,54,59,0.5)" width="40" height="40"/>
-			<rect x="0.333" y="119.5" fill="rgba(50,54,59,0.3)" width="40" height="41"/>
-			<rect x="40.333" y="79.5" fill="rgba(50,54,59,0.5)" width="40" height="40"/>
-			<rect x="40.333" y="39.5" fill="rgba(50,54,59,0.7)" width="40" height="40"/>
-			<rect x="80.333" y="240.5" fill="rgba(50,54,59,0.9)" width="40" height="40"/>
-			<rect x="40.333" y="200.5" fill="rgba(50,54,59,0.7)" width="40" height="40"/>
+			<rect x="80.333" y="-0.5" fill="rgb(222,222,222)" width="40" height="40"/>
+			<rect x="40.333" y="160.5" fill="rgb(222,222,222)" width="40" height="40"/>
+			<rect x="0.333" y="119.5" fill="rgb(222,222,222)" width="40" height="41"/>
+			<rect x="40.333" y="79.5" fill="rgb(222,222,222)" width="40" height="40"/>
+			<rect x="40.333" y="39.5" fill="rgb(222,222,222)" width="40" height="40"/>
+			<rect x="80.333" y="240.5" fill="rgb(222,222,222)" width="40" height="40"/>
+			<rect x="40.333" y="200.5" fill="rgb(222,222,222)" width="40" height="40"/>
 		</g>
 	</g>
 </g>	
