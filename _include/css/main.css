@@ -405,12 +405,22 @@ header #right li a:hover{
 	filter: alpha(opacity=65);
 }
 
-@media all and (max-width: 400px){
-header #right {
-	display: none;
+@media all and (max-width: 300px){
+	header #right {
+		display: none;
+	}
 }
 
+@media all and (max-width: 400px) and (min-width: 300px){
+	header #right li {
+
+		margin-left: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+		}
 }
+
 
 nav#menu {
 	float: right;
