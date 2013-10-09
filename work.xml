@@ -3,9 +3,9 @@
 	
 	<project id="0">
 		<classname>item-thumbs span12</classname>
-		<title>Proj1</title>
+		<title>Proj0</title>
 		<subtitle>This one is awesome!</subtitle>
-		<url>proj1.html</url>
+		<url>project.html?id=0</url>
 		<imagesrc>_include/img/work/thumbs/image-02.jpg</imagesrc>
 		<data>
 			
@@ -14,11 +14,11 @@
 		</data>
    </project>
    
-   <project id="0">
+   <project id="1">
 		<classname>item-thumbs span6</classname>
 		<title>Proj1</title>
 		<subtitle>This one is awesome!</subtitle>
-		<url>proj1.html</url>
+		<url>project.html?id=1</url>
 		<imagesrc>_include/img/work/thumbs/image-02.jpg</imagesrc>
 		<data>
 			
@@ -27,11 +27,11 @@
 		</data>
    </project>
    
-   <project id="0">
+   <project id="2">
 		<classname>item-thumbs span6</classname>
-		<title>Proj1</title>
+		<title>Proj2</title>
 		<subtitle>This one is awesome!</subtitle>
-		<url>proj1.html</url>
+		<url>project.html?id=2</url>
 		<imagesrc>_include/img/work/thumbs/image-02.jpg</imagesrc>
 		<data>
 			
@@ -40,11 +40,11 @@
 		</data>
    </project>
    
-   <project id="0">
+   <project id="3">
 		<classname>item-thumbs span3</classname>
-		<title>Proj1</title>
+		<title>Proj3</title>
 		<subtitle>This one is awesome!</subtitle>
-		<url>proj1.html</url>
+		<url>project.html?id=3</url>
 		<imagesrc>_include/img/work/thumbs/image-02.jpg</imagesrc>
 		<data>
 			
@@ -53,37 +53,11 @@
 		</data>
    </project>
    
-   <project id="0">
+   <project id="4">
 		<classname>item-thumbs span3</classname>
-		<title>Proj1</title>
+		<title>Proj4</title>
 		<subtitle>This one is awesome!</subtitle>
-		<url>proj1.html</url>
-		<imagesrc>_include/img/work/thumbs/image-02.jpg</imagesrc>
-		<data>
-			
-			Hello, this is a test!!
-			
-		</data>
-   </project>
-   
-   <project id="0">
-		<classname>item-thumbs span3</classname>
-		<title>Proj1</title>
-		<subtitle>This one is awesome!</subtitle>
-		<url>proj1.html</url>
-		<imagesrc>_include/img/work/thumbs/image-02.jpg</imagesrc>
-		<data>
-			
-			Hello, this is a test!!
-			
-		</data>
-   </project>
-   
-    <project id="0">
-		<classname>item-thumbs span3</classname>
-		<title>Proj1</title>
-		<subtitle>This one is awesome!</subtitle>
-		<url>proj1.html</url>
+		<url>project.html?id=4</url>
 		<imagesrc>_include/img/work/thumbs/image-02.jpg</imagesrc>
 		<data>
 			

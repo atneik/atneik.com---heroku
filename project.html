@@ -54,6 +54,16 @@
 <!-- Modernizr -->
 <script src="_include/js/modernizr.js"></script>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+
+<script type="text/javascript">
+	
+	function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+}
+
+</script>
+
 <!-- Analytics -->
 <script type="text/javascript">
 
@@ -93,10 +103,11 @@
         
         
         <div id="right">
-        <ul>
+        <ul id="rightList">
         	<li><a href="index.html"> <i class="font-icon-grid"> </i></a></li>
-        	<li><i class="font-icon-arrow-simple-left"> </i></li>
-        	<li><a href="index.html"> <i class="font-icon-arrow-simple-right"> </i></a></li>
+        	<li id = "rightPrev"></li>
+        	<li id = "rightNext"></li>        
+        
         </ul>
         </div>       
     </div>
@@ -109,24 +120,63 @@
         
         <div class="row">   
             <div class="span12">
-            	
-                	<h2> Project1</h2>
-                	 
-                	<p>
-                	fasfasf
-                	fds
-                	f
-                	dsf
-                	sda
-                	sdaf
-                	d
-                	saf
-                	ds
-                	fdsafdsfdsfdsfdsafdsf dsf ds fds f asdf s
-                	
-                	</p>
-                    
-            	
+            	<div id="project">
+                        
+							  <script>
+							  	
+								  $(document).ready(function(){
+								  		
+								  		var requestId=getURLParameter('id');
+								  		if(requestId == null)
+								  		{
+									  		window.location = "index.html";
+								  		}
+								  		
+						        		projectNext = parseInt(requestId) + 1;
+						        		projectPrev = parseInt(requestId) - 1;
+						        		
+						        		
+						        		$("#rightPrev").append('<a href="project.html?id=' + projectPrev + '"<i class="font-icon-arrow-simple-left"> </i></a>');
+						        		$("#rightNext").append('<a href="project.html?id=' + projectNext + '"<i class="font-icon-arrow-simple-right"> </i></a>');
+						        		
+
+									  $.ajax({
+										  type: "GET",
+										  url: "work.xml",
+										  dataType: "xml",
+										  success: function(xml) {
+										  		var flag = true;
+											  $(xml).find('project').each(function(){
+												  var id = $(this).attr('id');
+												  var title = $(this).find('title').text();
+												  var subtitle = $(this).find('subtitle').text();
+												  var url = $(this).find('url').text();
+												  var classname = $(this).find('classname').text();
+												  var imagesrc = $(this).find('imagesrc').text();
+												  var data = $(this).find('data').text();
+												  
+												  
+												  if(id == requestId){
+												  $('<h2> </h2>').html(title).appendTo('#project');
+												  
+												  $('<p> </p>').html(data).appendTo('#project');
+												  flag = false;
+												  }
+											});
+											
+											if(flag){
+												window.location = "index.html";
+												}
+											
+											
+										}
+									});
+									
+									
+								});
+							  </script>
+                     	
+                        </div>
             </div>
         </div>
         <!-- End Portfolio Projects -->
@@ -161,8 +211,8 @@
 </a>
 <!-- End Back to Top -->
 
+
 <!-- Js -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
 <script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
 <script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
 <script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
